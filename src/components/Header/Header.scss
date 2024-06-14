@@ -1,0 +1,164 @@
+
+@import './../../styles/main.scss';
+
+.header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: $background-color;
+
+    .nav_container{
+      position: sticky;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: fit-content;
+      padding: 1rem;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.1);
+
+
+      .logo {
+        width: 70%;
+        height: 40px;
+        align-content: flex-start;
+        left: 0;
+        text-align: left;
+      }
+
+      .contact_container{
+        border: 0.5px solid $primary-button-light-color;
+        border-radius: 5px;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 0.55rem;
+        align-self: flex-end;
+        text-align: right;
+        right: 0px;
+        cursor: pointer;
+
+      }
+    }
+  
+   
+  
+    .title {
+      color: #000;
+      font-family: Inter;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 70.19px;
+      letter-spacing: -1px;
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 10%;
+    }
+  
+    .subtitle {
+      color: $secondary-color;
+      
+    }
+
+    .banner_container{
+      width: 100%;
+      margin: 0;
+      height: atuo;
+    }
+    .banner_text_container {
+      
+      background: url('../../../public/images/bannerTextBg.svg');
+      width: 100%;
+      position: relative;
+      height: 20rem; /* Adjust height as necessary */
+    
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0, rgb(255, 255, 255)),
+          color-stop(1, rgba(0, 0, 0, 0))
+        );
+        background-image: -o-linear-gradient(bottom, rgb(102, 102, 102) 50%, rgba(0, 0, 0, 0) 50%);
+        background-image: -moz-linear-gradient(bottom, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0) 50%);
+        background-image: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 50%, rgba(0, 0, 0, 0) 50%);
+        background-image: -ms-linear-gradient(bottom, rgb(255, 255, 255) 100%, rgba(0, 0, 0, 0) 100%);
+        background-image: linear-gradient(to top, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 20%);
+        z-index: 1; 
+        pointer-events: none;
+      }
+    }
+    
+    .banner_img_container {
+      width: 100%;
+      position: relative;
+      height: 20rem;
+      display: flex;
+    }
+    
+    .banner_image {
+      width: 20rem;
+      height: 20rem;
+      object-fit: cover;
+      position: relative;
+    }
+    
+    .overlay_image {
+      width: 100%;
+      height: 20rem;
+      clip-path: polygon(25% 0%, 75% 0%, 100% 1%, 95% 91%, 24% 69%, 0 0);
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-right: -10%;
+      background: url('../../../public/images/bannerImgBg.svg') no-repeat center center;
+      background-size: cover;
+    }
+    
+    
+}
+
+@media screen and (min-width: $tablet) {
+  .banner_container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20rem;
+  }
+  .title{
+    font-size: 40px;
+  }
+  
+}
+@media screen and (min-width: $desktop) {
+  .banner_container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20rem;
+  }
+  .title{
+    font-size: 40px;
+  }
+  
+}
+
+@media screen and (min-width: $large-desktop) {
+  .banner_container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20rem;
+  }
+  .title{
+    font-size: 40px;
+  }
+  
+}
+

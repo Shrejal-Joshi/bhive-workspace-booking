@@ -1,0 +1,30 @@
+$font-family-inter: 'Inter', sans-serif;
+
+$font-size-xxl: 58px;
+$font-size-xl: 36px;
+$font-size-lg: 24px;
+$font-size-md: 20px;
+$font-size-sm: 18px;
+$font-size-xs: 16px;
+
+
+@mixin font-size($size) {
+  @if $size == xxl {
+    font-size: $font-size-xxl;
+  }
+  @else if $size == xl {
+    font-size: $font-size-xl;
+  }
+  @else if $size == lg {
+    font-size: $font-size-lg;
+  }
+  @else if $size == md {
+    font-size: $font-size-md;
+  }
+  @else if $size == sm {
+    font-size: $font-size-sm;
+  }
+  @else if $size == xs {
+    font-size: $font-size-xs;
+  }
+}

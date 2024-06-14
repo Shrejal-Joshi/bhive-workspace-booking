@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import './theme';
+@import './breakpoint';
+@import './resizing';
+body {
+  font-family: $font-family-inter;
+  background-color: $background-color;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}

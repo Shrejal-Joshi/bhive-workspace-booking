@@ -1,0 +1,123 @@
+@import './../../styles/main';
+@import './../../styles/resizing';
+
+.download-app {
+    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
+    color: $text-light-color;
+    
+    h2{
+      color: $gray-gradient-three;
+      text-align: left;
+      padding: 1rem;
+      margin-left: 10%;
+      margin-bottom: 2%;
+    }
+  
+    .bg_container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+
+      .mobile_img_container{
+        width: 20%;
+        height: 23.75rem;
+        text-align: center;
+        margin-left: 5%;
+      }
+      .play_store_link_container{
+        height: 10rem;
+        border: 0.5pxpx solid #fdfdfd;
+        border-radius: 5px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        text-align: right;
+        width: 100%;
+        margin-top: -10%;
+
+        .content_container{
+          width: 60%;
+          float: right;
+          padding: 2rem;
+          text-align: center;
+          p{
+            text-align: center;
+            right: 0;
+          }
+          
+        }
+        .btn_container{
+          display: flex;
+          flex-direction: row;
+          margin-top: 3rem;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+        }
+
+        
+      }
+    }
+}
+
+@media screen  and (min-width: $tablet) {
+  h2{
+    left: 50%;
+  }
+  .bg_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+
+
+  }
+  .mobile_img_container{
+    text-align: left;
+    align-self: flex-start;
+   
+    
+  }
+  
+}
+@media screen and (min-width: $desktop) {
+  h2{
+    left: 50%;
+  }
+  .bg_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+
+
+  }
+  .mobile_img_container{
+    text-align: left;
+    align-self: flex-start;
+    
+  }
+}
+
+@media screen and (min-width: $large-desktop) {
+  h2{
+    left: 50%;
+  }
+  .bg_container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+
+
+  }
+  .mobile_img_container{
+    text-align: left;
+    align-self: flex-start;
+    
+  }
+}
+
+  
