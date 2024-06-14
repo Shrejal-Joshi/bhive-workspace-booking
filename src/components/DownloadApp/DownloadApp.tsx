@@ -11,6 +11,7 @@ const DownloadApp: React.FC = () => {
           </div>
           <div className='play_store_link_container'>
             <div className='content_container'>
+              <p>Boost your productivity with the BHIVE Workspace app. Elevate your workspace, collaborate efficiently, and unlock exclusive perks.</p>
               <div className='btn_container'>
                   <img src='/images/playstore.svg' alt="playstore"/>
                   <img src='/images/appstore.svg' alt="appstore"/>

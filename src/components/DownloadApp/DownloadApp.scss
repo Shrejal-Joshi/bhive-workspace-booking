@@ -6,6 +6,7 @@
     padding: 2rem;
     text-align: center;
     color: $text-light-color;
+    margin: 0 auto;
     
     h2{
       color: $gray-gradient-three;
@@ -20,41 +21,43 @@
       flex-direction: column;
       justify-content: space-between;
 
-
       .mobile_img_container{
-        width: 20%;
-        height: 23.75rem;
+        width: 10rem;
+        height: 26rem;
         text-align: center;
         margin-left: 5%;
       }
       .play_store_link_container{
         height: 10rem;
-        border: 0.5pxpx solid #fdfdfd;
-        border-radius: 5px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         text-align: right;
         width: 100%;
         margin-top: -10%;
-
         .content_container{
-          width: 60%;
+          width: 70%;
           float: right;
           padding: 2rem;
           text-align: center;
           p{
             text-align: center;
             right: 0;
+            font-size: 14px;
+            display: none;
+
           }
           
         }
         .btn_container{
           display: flex;
           flex-direction: row;
-          margin-top: 3rem;
+          margin-top: 1rem;
           text-align: center;
           align-items: center;
           justify-content: center;
           cursor: pointer;
+
+          img{
+            margin-right: 1rem;
+          }
         }
 
         
@@ -77,10 +80,23 @@
   .mobile_img_container{
     text-align: left;
     align-self: flex-start;
-   
-    
+    width: 10rem;
+    height: 35rem;
+    text-align: center;
+    margin-left: 5%;  
+  }
+  .play_store_link_container{
+    border: 0.5pxpx solid #fdfdfd;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   
+  .content_container{
+    p{
+      display: block;
+    }
+
+  }
 }
 @media screen and (min-width: $desktop) {
   h2{
@@ -91,13 +107,26 @@
     flex-direction: row;
     width: 100%;
     min-width: 100%;
-
-
   }
   .mobile_img_container{
     text-align: left;
     align-self: flex-start;
+    width: 100rem;
+    height: 25rem;
+    text-align: center;
+    margin-left: 5%;
     
+  }
+  .play_store_link_container{
+    border: 0.5pxpx solid #fdfdfd;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .content_container{
+    p{
+      display: block;
+    }
+
   }
 }
 
@@ -116,7 +145,22 @@
   .mobile_img_container{
     text-align: left;
     align-self: flex-start;
+    width: 10rem;
+    height: 25rem;
+    text-align: center;
+    margin-left: 5%;
     
+  }
+  .play_store_link_container{
+    border: 0.5pxpx solid #fdfdfd;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .content_container{
+    p{
+      display: block;
+    }
+
   }
 }
 
