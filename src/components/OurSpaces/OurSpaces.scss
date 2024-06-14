@@ -3,6 +3,7 @@
   .our_spaces {
     padding: 2rem;
     margin-top: 1rem;
+    width: 100%;
     margin: 0 auto;
     h2 {
       text-align: center;
@@ -14,14 +15,15 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     grid-row-gap: 2rem;
     grid-column-gap: 50px;
+    align-self: center; 
   }
   
   .card {
     margin: var(--card-margin);
-    width: var(--card-width);
+    width: 100%;
     font-size: var(--card-font-size);
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -33,7 +35,7 @@
     cursor: pointer;
   
     .space_image {
-        position: relative; /* Make the parent container positioned */
+        position: relative; 
         margin-top: 1rem;
         margin-bottom: 1rem;
         margin-left: -0.25rem;
@@ -58,13 +60,13 @@
             padding-right: 0.25rem;
             border-radius: 5px;
             text-align: center;
-            border: 0.5px solid transparent; /* Add a border to make the container visible */
+            border: 0.5px solid transparent; 
             z-index: 10;
             display: flex;
             width: fit-content;
             flex-direction: row;
             gap: 3px;
-            transition: opacity 0.3s ease; /* Add transition for smooth visibility change */
+            transition: opacity 0.3s ease; 
             p{
                 
                 font-family: $font-family-inter;
@@ -149,14 +151,10 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
-
-  
       .pricing {
         display: flex;
         flex-direction: row;
         gap: 0.55rem;
-        
         .day_pass
         {    
             min-width: 8rem;
