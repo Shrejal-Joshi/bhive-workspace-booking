@@ -22,8 +22,18 @@ const OurSpaces: React.FC = () => {
     }
   };
   const handleClickLocation = (url: string) => {
-    window.open(url, '_blank');
-  }
+    if (!url) {
+      console.error('URL is invalid or not provided');
+      return;
+    }
+    const newWindow = window.open(url, '_blank');
+    if (newWindow) {
+      newWindow.focus();
+    } else {
+      console.error('Failed to open the URL. Check for pop-up blockers or browser settings.');
+    }
+  };
+  
   const getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
