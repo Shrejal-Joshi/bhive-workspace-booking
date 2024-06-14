@@ -1,10 +1,13 @@
 @import './../../styles/main';
 @import './../../styles/resizing'; 
   .our_spaces {
-    padding: 2rem;
-    margin-top: 1rem;
-    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
+    text-align: center;
+  
     h2 {
       text-align: center;
       margin-bottom: 2rem;
@@ -23,7 +26,7 @@
   
   .card {
     margin: var(--card-margin);
-    width: 100%;
+    width: 90%;
     font-size: var(--card-font-size);
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -284,6 +287,8 @@
     .space_list_container{
       width: 95vw;
       max-width: 1170px;
+      grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+
     }
 }
 
@@ -291,10 +296,16 @@
     .space_list_container{
       width: 95vw;
       max-width: 1170px;
+      grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+
     }
 }
   
   @media screen and (min-width: $large-desktop) {
+    .space_list_container{
+      grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+
+    }
     .space_list_container p {
       width: 100%;
     }
